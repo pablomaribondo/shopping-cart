@@ -1,11 +1,13 @@
 import Route from '@ember/routing/route';
-import { products } from '../data/products';
 
 export default class ItemRoute extends Route {
-  model(params) {
+  async model(params) {
     const { item_id } = params;
 
-    return products.find(({ id }) => id === item_id);
+    const response = await fetch('/api/items.json');
+    const { data } = await response.json();
+
+    return data.find(({ id }) => id === item_id);
   }
 
   setupController(controller, model) {
