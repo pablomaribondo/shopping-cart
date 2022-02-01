@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>ShoppingCart Tests</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    {{content-for "head"}}
-    {{content-for "test-head"}}
+    {{content-for "head"}} {{content-for "test-head"}}
 
-    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/shopping-cart.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/test-support.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
-    {{content-for "head-footer"}}
-    {{content-for "test-head-footer"}}
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css" />
+    <link rel="stylesheet" href="{{rootURL}}assets/shopping-cart.css" />
+    <link rel="stylesheet" href="{{rootURL}}assets/test-support.css" />
+
+    {{content-for "head-footer"}} {{content-for "test-head-footer"}}
   </head>
   <body>
-    {{content-for "body"}}
-    {{content-for "test-body"}}
+    {{content-for "body"}} {{content-for "test-body"}}
 
     <div id="qunit"></div>
     <div id="qunit-fixture">
@@ -34,7 +44,6 @@
     <script src="{{rootURL}}assets/shopping-cart.js"></script>
     <script src="{{rootURL}}assets/tests.js"></script>
 
-    {{content-for "body-footer"}}
-    {{content-for "test-body-footer"}}
+    {{content-for "body-footer"}} {{content-for "test-body-footer"}}
   </body>
 </html>
